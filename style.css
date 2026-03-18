@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: aliceblue;
+}
+.image_logo {
+  position: relative;  /* reference point for logo */
+  width: 500px;
+}
+
+.bg-image {
+  object-fit: cover;
+  display: block;
+}
+
+.logo {
+  position: absolute;
+  top: 140px;
+  left: 140px;
+  width: 150px;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5); /* black + transparent */
+}
+
+form{
+    background-color: white;
+    min-height: 100vh;
+    width: 560%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.form-group{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.fname_lname,.email_phone,.password_cpassword{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 1rem ;
+}
+input{
+    padding: 1em 3.75em;
+    font-family: inherit;
+    font-size: inherit;
+    border: 1px solid #205700;
+    border-radius: 6px;
+}
+legend{
+
+    font-size: 48px;
+    font-weight: 500;
+    margin-left: 1em;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 1.75em 4.75em;
+    gap: 1em;
+}
+button{
+    padding: 1em 5.75em;
+    font-size: 18px;
+    border: 1px solid #205700;;
+    border-radius: 6px;
+    background-color: #205700;
+    color: #e8ebe6;
+}
+p{
+    font-size: 19px;
+    font-weight: 500;
+}
+span{
+    color: #205700;
+    font-weight: inherit;
+}
+input:invalid{
+    border: 1px solid  red;
+}
+input:focus{
+    border: 2px solid #0ee93a;
+  box-shadow: 0 0 5px rgba(34, 146, 164, 0.3);
+  outline: none;
+}
